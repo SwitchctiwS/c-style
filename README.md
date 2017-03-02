@@ -1,5 +1,5 @@
 #c-style
-Personal style guide for myself, becuase I forget it sometimes. Mostly has to do with directory structure.
+Personal style guide for myself, becuase I forget it sometimes.
 
 ##Variables, Brackets, Pointers
 <ul>
@@ -34,7 +34,7 @@ int function_name(int* variable_name) {
 
 ##.h Files
 <ul>
-<li>Has all .hincludes needed for corresponding .c file</li>
+<li>Has all .h includes needed for corresponding .c file</li>
 <li>Do not include main.h</li>
 <li><ol>
 <li>Includes with anti-recursion provision</li>
