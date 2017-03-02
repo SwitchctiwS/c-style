@@ -5,7 +5,7 @@ Personal style guide for myself, becuase I forget it sometimes. Mostly has to do
 <ul>
 <li>Java style K&R braces with Python style everything else</li>
 <li>Pointer goes directly after type when used, but when declared it is attached to the type</li>
-<li>`if` statements always have braces</li>
+<li>if statements always have braces</li>
 </ul>
 
 ###Example
@@ -28,14 +28,14 @@ int function_name(int* variable_name) {
 
 ##.c Files
 <ul>
-<li>Only include is its corresponding `.h` file</li>
+<li>Only include is its corresponding .h file</li>
 <li>No defines</li>
 </ul>
 
 ##.h Files
 <ul>
-<li>Has all `.h`includes needed for corresponding `.c` file</li>
-<li>Do not include `main.h`</li>
+<li>Has all .hincludes needed for corresponding .c file</li>
+<li>Do not include main.h</li>
 <li><ol>
 <li>Includes with anti-recursion provision</li>
 <li>Defines</li>
@@ -66,7 +66,7 @@ char foo(int bar);
 
 ##Directories
 <ul>
-<li>Each "module" goes in separate directory that shares name with `.c` and `.h` files</li>
+<li>Each "module" goes in separate directory that shares name with .c and .h files</li>
 </ul>
 
 ###Example
@@ -99,13 +99,13 @@ rnd ----- foo ----- makefile
 
 ##Makefiles
 <ul>
-<li>`all` links to different directories with `cd`</li>
+<li>all links to different directories with cd</li>
 </ul>
 
 ###Example
 For the above directory structure
 
-rnd makefile
+rnd makefile:
 ```
 all:
 	gcc -c main.c
@@ -119,7 +119,7 @@ clean:
 	cd bar; make clean
 ```
 
-foo makefile
+foo makefile:
 ```
 all:
 	gcc -c foo.c
@@ -128,7 +128,7 @@ clean:
 	rm foo.o
 ```
 
-bar makefile
+bar makefile:
 ```
 all:
 	gcc -c bar.c
