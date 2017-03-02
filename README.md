@@ -4,6 +4,7 @@ Personal style guide for myself, becuase I forget it sometimes.
 ##Variables, Brackets, Pointers
 <ul>
 <li>Java style K&R braces with Python style everything else</li>
+<li>Condensed if-else statements</li>
 <li>Pointer goes directly after type when used, but when declared it is attached to the type</li>
 <li>if statements always have braces</li>
 </ul>
@@ -17,9 +18,11 @@ int function_name(int* variable_name) {
 
 	if (var == -4) {
 		foo();
+	} else {
+		var = 1;
 	}
 
-	bar();
+	bar(var);
 
 	return 0;
 }
